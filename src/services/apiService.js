@@ -1,7 +1,6 @@
+import axios from "axios";
+
 const API_READ_ACCESS_TOKEN = import.meta.env.VITE_API_READ_ACCESS_TOKEN;
-
-console.log(import.meta.env);
-
 
 const options = {
     method: "GET",
@@ -11,10 +10,10 @@ const options = {
     },
 };
 
-const fetchPopularMovies = async () => {
+const fetchPopularMovies = async (page) => {
     try {
         const response = await fetch(
-            "https://api.themoviedb.org/3/movie/popular",
+            `https://api.themoviedb.org/3/movie/popular?page=${page}`,
             options
         );
         const data = await response.json();
@@ -23,7 +22,5 @@ const fetchPopularMovies = async () => {
         console.error("Failed to fetch popular movies", error);
     }
 };
-
-// fetchPopularMovies().then((data) => console.log(data));
 
 export { fetchPopularMovies };

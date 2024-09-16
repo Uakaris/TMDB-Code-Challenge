@@ -10,4 +10,14 @@ html {
 
 body {
   position: relative;
+  background-color: #171717;
+  font-family: "poppins", sans-serif;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
 }
