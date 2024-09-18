@@ -30,7 +30,7 @@ const PopularMoviesInfo = () => {
     };
 
     if (loading && page === 1) {
-        return <p>Loading...</p>;
+        return <p className="Loading">Loading...</p>;
     }
 
     if (error) {

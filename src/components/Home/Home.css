@@ -1,19 +1,14 @@
-.PopularMoviesInfoHeading {
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: 22px;
-    margin-bottom: 12px;
-}
-
-.PopularMoviesInfoContainer {
+.HomeContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    padding: 0 20px;
+    color: #fff;
 }
 
-.LoadMoreButton {
+.PopularButton {
     color: white;
     display: flex;
     margin-top: 22px;
@@ -25,18 +20,11 @@
     -webkit-backdrop-filter: blur(3.5px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+    text-decoration: none;
     transition: all 0.3s ease;
 }
 
-.LoadMoreButton:hover {
+.PopularButton:hover {
     background: rgba(74, 74, 74, 0.15);
     transform: scale3d(1.05, 1.05, 1);
-}
-
-.Loading {
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }

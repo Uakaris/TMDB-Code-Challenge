@@ -1,12 +1,21 @@
-import { fetchPopularMovies } from "../services/apiService";
+import { Routes, Route } from "react-router-dom";
 
+import Home from "./Home/Home";
 import PopularMoviesInfo from "./PopularMoviesInfo/PopularMoviesInfo";
 
 const App = () => {
     return (
-        <>
-            <PopularMoviesInfo />
-        </>
+        <div>
+            <div>
+                <Routes>
+                    <Route path="TMDB-Code-Challenge" element={<Home />} />
+                    <Route
+                        path="/popularMovies"
+                        element={<PopularMoviesInfo />}
+                    />
+                </Routes>
+            </div>
+        </div>
     );
 };
 
