@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import * as apiService from "../../services/apiService";
 import PopularMoviesList from "../PopularMoviesList/PopularMoviesList";
 import "./PopularMoviesInfo.css";
+import { Link } from "react-router-dom";
 
 const PopularMoviesInfo = () => {
     const [movies, setMovies] = useState([]);
@@ -39,6 +40,11 @@ const PopularMoviesInfo = () => {
 
     return (
         <div className="PopularMoviesInfoContainer">
+            <div>
+                <Link to="/TMDB-Code-Challenge" className="HomeButton">
+                    Home        
+                </Link>
+            </div>
             <h1 className="PopularMoviesInfoHeading">Popular Movies</h1>
             <PopularMoviesList movies={movies} />
             {loading && <p>Loading more movies...</p>}
