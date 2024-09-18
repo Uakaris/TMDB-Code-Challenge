@@ -8,9 +8,9 @@ const App = () => {
         <div>
             <div>
                 <Routes>
-                    <Route path="TMDB-Code-Challenge" element={<Home />} />
+                    <Route path="/TMDB-Code-Challenge" element={<Home />} />
                     <Route
-                        path="/popularMovies"
+                        path="/TMDB-Code-Challenge/popularMovies"
                         element={<PopularMoviesInfo />}
                     />
                 </Routes>

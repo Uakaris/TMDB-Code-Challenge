@@ -5,7 +5,7 @@ const NavBar = () => {
     return (
         <div className="HomeContainer">
             <h1 className="HomeTitle">Movie Database</h1>
-            <Link to="/popularMovies" className="PopularButton">
+            <Link to="/TMDB-Code-Challenge/popularMovies" className="PopularButton">
                 Popular Movies
             </Link>
         </div>
