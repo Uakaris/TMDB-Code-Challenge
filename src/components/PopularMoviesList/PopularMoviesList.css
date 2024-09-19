@@ -17,6 +17,12 @@
     }
 }
 
+@media (min-width: 1601px) and (max-width: 4000px) {
+    .PopularMoviesList {
+        grid-template-columns: repeat(8, minmax(200px, 1fr));
+    }
+}
+
 .ListContainer {
     display: flex;
     justify-content: center;

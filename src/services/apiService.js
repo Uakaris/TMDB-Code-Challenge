@@ -25,5 +25,4 @@ const fetchPopularMovies = async (page) => {
 
 
 
-
 export { fetchPopularMovies };
